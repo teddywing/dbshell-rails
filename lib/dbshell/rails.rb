@@ -1,13 +1,6 @@
 require "dbshell/rails/version"
 
-Dir[
-  File.join(File.dirname(__FILE__),
-  'rails',
-  'tasks',
-  '**/*.rake')
-].each do |rake|
-  load rake
-end
+load File.expand_path('../rails/tasks/dbshell.rake', __FILE__)
 
 module DBShell
   module Rails
