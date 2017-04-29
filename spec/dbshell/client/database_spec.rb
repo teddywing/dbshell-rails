@@ -15,6 +15,12 @@ describe DBShell::Client::Database do
       }).must_equal(DBShell::Client::Postgres)
     end
 
+    it "handles PostGIS" do
+      DBShell::Client::Database.handler({
+        'adapter' => 'postgis'
+      }).must_equal(DBShell::Client::Postgres)
+    end
+
     it "handles MySQL" do
       DBShell::Client::Database.handler({
         'adapter' => 'mysql2'

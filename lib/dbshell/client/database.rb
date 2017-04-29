@@ -9,7 +9,7 @@ module DBShell
         case connection_params['adapter']
         when 'sqlite3'
           DBShell::Client::SQLite3
-        when 'postgresql'
+        when 'postgresql', 'postgis'
           DBShell::Client::Postgres
         when 'mysql2'
           DBShell::Client::MySQL
