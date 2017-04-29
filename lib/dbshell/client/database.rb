@@ -1,5 +1,6 @@
 require 'dbshell/client/sqlite3'
 require 'dbshell/client/postgres'
+require 'dbshell/client/mysql'
 
 module DBShell
   module Client
@@ -10,6 +11,8 @@ module DBShell
           DBShell::Client::SQLite3
         when 'postgresql'
           DBShell::Client::Postgres
+        when 'mysql2'
+          DBShell::Client::MySQL
         else
           raise UnsupportedDatabaseAdapter
         end

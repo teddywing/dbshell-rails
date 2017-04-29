@@ -3,6 +3,11 @@ module DBShell
     class MySQL
       EXECUTABLE_NAME = 'mysql'
 
+      def self.runshell(db_info)
+        args = self.build_command(db_info)
+        exec(*args)
+      end
+
       def self.build_command(db_info)
         args = [EXECUTABLE_NAME]
 

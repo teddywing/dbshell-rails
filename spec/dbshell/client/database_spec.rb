@@ -15,6 +15,12 @@ describe DBShell::Client::Database do
       }).must_equal(DBShell::Client::Postgres)
     end
 
+    it "handles MySQL" do
+      DBShell::Client::Database.handler({
+        'adapter' => 'mysql2'
+      }).must_equal(DBShell::Client::MySQL)
+    end
+
     it "raises an error if no suitable adapter is found" do
       proc do
         DBShell::Client::Database.handler({
