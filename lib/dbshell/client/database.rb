@@ -11,7 +11,7 @@ module DBShell
         when 'postgresql'
           DBShell::Client::Postgres
         else
-          raise InvalidDatabaseAdapter
+          raise UnsupportedDatabaseAdapter
         end
       end
 
@@ -23,6 +23,6 @@ module DBShell
     end
 
 
-    class InvalidDatabaseAdapter < StandardError; end
+    class UnsupportedDatabaseAdapter < StandardError; end
   end
 end

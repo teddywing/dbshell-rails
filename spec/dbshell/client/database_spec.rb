@@ -20,7 +20,7 @@ describe DBShell::Client::Database do
         DBShell::Client::Database.handler({
           'adapter' => 'sybil_system'
         })
-      end.must_raise(DBShell::Client::InvalidDatabaseAdapter)
+      end.must_raise(DBShell::Client::UnsupportedDatabaseAdapter)
     end
   end
 end
