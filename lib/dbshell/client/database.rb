@@ -7,7 +7,7 @@ module DBShell
       def self.handler(connection_params)
         case connection_params['adapter']
         when 'sqlite3'
-          DBShell::Client::Sqlite3
+          DBShell::Client::SQLite3
         when 'postgresql'
           DBShell::Client::Postgres
         else

@@ -6,7 +6,7 @@ describe DBShell::Client::Database do
     it "handles SQLite3" do
       DBShell::Client::Database.handler({
         'adapter' => 'sqlite3'
-      }).must_equal(DBShell::Client::Sqlite3)
+      }).must_equal(DBShell::Client::SQLite3)
     end
 
     it "handles Postgres" do

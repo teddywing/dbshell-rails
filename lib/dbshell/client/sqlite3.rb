@@ -1,6 +1,6 @@
 module DBShell
   module Client
-    class Sqlite3
+    class SQLite3
       EXECUTABLE_NAME = 'sqlite3'
 
       def self.runshell(db_info)
