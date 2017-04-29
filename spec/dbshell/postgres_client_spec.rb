@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'dbshell/postgres_client'
 
 describe DBShell::PostgresClient do
   describe ".build_command" do
