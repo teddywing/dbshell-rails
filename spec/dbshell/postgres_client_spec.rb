@@ -18,7 +18,7 @@ describe DBShell::PostgresClient do
         '-h',
         'mailmarehost',
         '-p',
-        '6027',
+        6027,
         'dbname'
       ])
     end
