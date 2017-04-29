@@ -1,3 +1,6 @@
+require 'dbshell/sqlite3_client'
+require 'dbshell/postgres_client'
+
 class DBShell::DatabaseClient
   def self.handler(connection_params)
     case connection_params['adapter']
@@ -8,6 +11,12 @@ class DBShell::DatabaseClient
     else
       raise DBShell::InvalidDatabaseAdapter
     end
+  end
+
+  def self.runshell(connection_params)
+    self
+      .handler(connection_params)
+      .runshell(connection_params)
   end
 end
 
