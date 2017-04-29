@@ -11,7 +11,7 @@ module DBShell
         when 'postgresql'
           DBShell::Client::Postgres
         else
-          raise DBShell::InvalidDatabaseAdapter
+          raise InvalidDatabaseAdapter
         end
       end
 
@@ -21,8 +21,8 @@ module DBShell
           .runshell(connection_params)
       end
     end
+
+
+    class InvalidDatabaseAdapter < StandardError; end
   end
 end
-
-
-class DBShell::InvalidDatabaseAdapter < StandardError; end
