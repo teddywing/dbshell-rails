@@ -1,10 +1,10 @@
 require 'minitest/autorun'
 require 'dbshell/client/postgres'
 
-describe DBShell::PostgresClient do
+describe DBShell::Client::Postgres do
   describe ".build_command" do
     it "builds basic arguments" do
-      DBShell::PostgresClient.build_command({
+      DBShell::Client::Postgres.build_command({
         'adapter' => 'postgresql',
         'host' => 'mailmarehost',
         'port' => 6027,
