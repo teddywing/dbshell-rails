@@ -19,7 +19,7 @@ module DBShell
 
         args.push('-U', user) if user
         args.push('-h', host) if host
-        args.push('-p', port) if port
+        args.push('-p', port.to_s) if port
         args.push(db_name)
       end
     end
