@@ -7,3 +7,8 @@ task :dbshell do
     Rails.application.config.database_configuration[env]
   )
 end
+
+# Alias 'dbshell' to 'db:shell'
+namespace :db do
+  task shell: :dbshell
+end
