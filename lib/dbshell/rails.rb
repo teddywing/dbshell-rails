@@ -1,6 +1,6 @@
 require "dbshell/rails/version"
 
-module Dbshell
+module DBShell
   module Rails
     # Your code goes here...
   end

@@ -1,4 +1,4 @@
-# Dbshell::Rails
+# DBShell::Rails
 
 TODO: Write a gem description
 

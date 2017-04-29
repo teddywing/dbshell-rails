@@ -5,7 +5,7 @@ require 'dbshell/rails/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "dbshell-rails"
-  spec.version       = Dbshell::Rails::VERSION
+  spec.version       = DBShell::Rails::VERSION
   spec.authors       = ["Teddy Wing"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
