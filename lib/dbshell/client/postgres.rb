@@ -1,3 +1,5 @@
+require 'dbshell/exec_alias'
+
 module DBShell
   module Client
     class Postgres
@@ -5,7 +7,7 @@ module DBShell
 
       def self.runshell(db_info)
         args = self.build_command(db_info)
-        exec(*args)
+        DBShell::ExecAlias.exec(args)
       end
 
       def self.build_command(db_info)
