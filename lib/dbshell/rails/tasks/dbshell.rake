@@ -1,4 +1,4 @@
-require 'dbshell/database_client'
+require 'dbshell/client/database'
 
 task :dbshell do
   env = ENV.fetch('RAILS_ENV', 'development')

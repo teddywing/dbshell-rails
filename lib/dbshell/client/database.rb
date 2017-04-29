@@ -1,5 +1,5 @@
-require 'dbshell/sqlite3_client'
-require 'dbshell/postgres_client'
+require 'dbshell/client/sqlite3'
+require 'dbshell/client/postgres'
 
 class DBShell::DatabaseClient
   def self.handler(connection_params)

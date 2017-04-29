@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'dbshell/sqlite3_client'
+require 'dbshell/client/sqlite3'
 
 describe DBShell::Sqlite3Client do
   describe ".build_command" do

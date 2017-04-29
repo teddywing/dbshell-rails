@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'dbshell/database_client'
+require 'dbshell/client/database'
 
 describe DBShell::DatabaseClient do
   describe ".handler" do
