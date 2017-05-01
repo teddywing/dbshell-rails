@@ -8,7 +8,11 @@ Gem::Specification.new do |spec|
   spec.version       = DBShell::Rails::VERSION
   spec.authors       = ['Teddy Wing']
   spec.summary       = %q{A Rake task to painlessly open a database shell.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = <<-EOF
+    A Rake task to painlessly open a database shell. Launches the
+    command line client of the current Rails environment's database and
+    automatically connects to the right database.
+  EOF
   spec.homepage      = ''
   spec.license       = 'MIT'
 
