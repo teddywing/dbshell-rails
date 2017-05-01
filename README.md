@@ -41,10 +41,6 @@ And then execute:
 
 	$ bundle
 
-Or install it yourself with:
-
-	$ gem install dbshell-rails
-
 
 ## License
 Licensed under the MIT License. See the included LICENSE.txt file.
