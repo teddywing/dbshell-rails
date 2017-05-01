@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
     command line client of the current Rails environment's database and
     automatically connects to the right database.
   EOF
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/teddywing/dbshell-rails'
   spec.license       = 'LGPL-3.0+'
 
   spec.files         = `git ls-files -z`.split("\x0")
