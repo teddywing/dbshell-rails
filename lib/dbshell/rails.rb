@@ -1,4 +1,4 @@
-require "dbshell/rails/version"
+require 'dbshell/rails/version'
 
 load File.expand_path('../rails/tasks/dbshell.rake', __FILE__)
 
