@@ -43,4 +43,5 @@ And then execute:
 
 
 ## License
-Licensed under the MIT License. See the included LICENSE.txt file.
+Copyright © 2017 Teddy Wing. Licensed under the GNU LGPLv3+ (see the included
+COPYING & COPYING.LESSER files).
