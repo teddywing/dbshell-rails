@@ -1,6 +1,6 @@
 require 'dbshell/rails/version'
 
-load File.expand_path('../rails/tasks/dbshell.rake', __FILE__)
+load 'dbshell/rails/tasks/dbshell.rake'
 
 module DBShell
   module Rails
