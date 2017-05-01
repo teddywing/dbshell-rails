@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
     automatically connects to the right database.
   EOF
   spec.homepage      = ''
-  spec.license       = 'LGPLv3+'
+  spec.license       = 'LGPL-3.0+'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
