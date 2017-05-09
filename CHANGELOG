@@ -1,5 +1,8 @@
 CHANGELOG
 =========
 
+v0.0.2 (2017-05-09):
+	* Fix error loading Rake task when starting Rails 5 server.
+
 v0.0.1 (2017-05-01):
 	* Initial release.
